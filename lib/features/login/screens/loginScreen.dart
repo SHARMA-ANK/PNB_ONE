@@ -203,7 +203,9 @@ class _LoginScreenState extends State<LoginScreen> {
                               duration: Duration(
                                   seconds: 2), // Duration to show the snackbar
                             );
-                          } else {}
+                          } else {
+                            loginController.login();
+                          }
                         },
                         child: Text(
                           "Login",
