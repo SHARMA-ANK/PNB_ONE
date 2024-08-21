@@ -283,7 +283,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ? Container(
                 decoration: BoxDecoration(
                     color: primaryGrey,
-                    border: Border.all(width: 1),
+                    // border: Border.(width: 1),
                     borderRadius: BorderRadius.circular(20)),
                 padding: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
                 height: mq.height * 0.3,
@@ -349,6 +349,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ))
             : null,
         bottomNavigationBar: BottomNavigationBar(
+          type: BottomNavigationBarType.fixed,
           selectedItemColor: Color.fromARGB(255, 197, 75, 4),
           unselectedItemColor: Colors.grey,
           currentIndex: homeScreenController.currentPage.value,
