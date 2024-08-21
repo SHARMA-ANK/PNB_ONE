@@ -28,7 +28,7 @@ class UserModel {
       accountNo: map['accountNo'] as String? ?? 'Unknown AccountNo',
       phoneNo: map['phoneNo'] as String? ?? 'Unknown PhoneNo',
       balance: (map['balance'] as num?)?.toDouble() ?? 0.0,
-      accessToken: map['accessToken'] as String? ?? '',
+      accessToken: map['refreshToken'] as String? ?? '',
     );
   }
 

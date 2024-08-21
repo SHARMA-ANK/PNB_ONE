@@ -11,4 +11,7 @@ class AppUrl {
   static String initiateTransaction() {
     return '$baseUrl/transactions/initiateTransaction';
   }
+  static String getTransactions(){
+    return '$baseUrl/transactions/recentTransactions';
+  }
 }
